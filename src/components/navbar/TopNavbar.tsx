@@ -48,12 +48,12 @@ export const TopNavBar = () => {
                             <div className="flex gap-3 justify-end items-center">
                                 <Sheet>
                                     <SheetTrigger>
-                                        <button className="relative">
+                                        <span className="relative">
                                             <MdOutlineFavoriteBorder className="text-[25px] md:text-[30px] text-[#457B9D] " />
                                             <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
                                                 64
                                             </span>
-                                        </button>
+                                        </span>
                                     </SheetTrigger>
                                     <SheetContent>
                                        <h1>ddd</h1>
