@@ -44,7 +44,7 @@ const banner = [
         href: "",
     },
 ];
-export default function Banner() {
+export const Banner = () => {
     return (
         <div className="topGradient">
             <Swiper

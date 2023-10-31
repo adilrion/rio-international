@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import SearchInput from "../searchBar/SearchBar";
 import { assets } from "../../assets";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 const navItem = [
     { title: "Fashion", href: "/fashion" },
@@ -27,8 +28,8 @@ export const TopNavBar = () => {
         setMobileMenuVisible(!mobileMenuVisible);
     }
     return (
-        <nav className="">
-            <div className=" bg-[#CCE3DE]  lg:px-8 p-2 md:px-4 ">
+        <nav className="bg-[#CCE3DE] w-full mx-auto">
+            <div className="max-w-screen-2xl  lg:px-8 p-2 md:px-4 ">
                 <div className="flex flex-col items-center justify-between screenSize border-b md:border-none border-[#CCE3DE]">
                     <div className="w-full flex justify-between items-center">
                         <a href="/" className="basis-1/6 text-gray-800">
@@ -45,12 +46,20 @@ export const TopNavBar = () => {
 
                         <div className="basis-1/4 ">
                             <div className="flex gap-3 justify-end items-center">
-                                <button className="relative">
-                                    <MdOutlineFavoriteBorder className="text-[25px] md:text-[30px] text-[#457B9D] " />
-                                    <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
-                                        64
-                                    </span>
-                                </button>
+                                <Sheet>
+                                    <SheetTrigger>
+                                        <button className="relative">
+                                            <MdOutlineFavoriteBorder className="text-[25px] md:text-[30px] text-[#457B9D] " />
+                                            <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
+                                                64
+                                            </span>
+                                        </button>
+                                    </SheetTrigger>
+                                    <SheetContent>
+                                       <h1>ddd</h1>
+                                    </SheetContent>
+                                </Sheet>
+
                                 <button className="relative">
                                     <MdOutlineShoppingCart className="text-[25px] md:text-[30px] text-[#457B9D] " />
                                     <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
@@ -69,7 +78,7 @@ export const TopNavBar = () => {
 
             {/* for large device */}
             <div className=" bg-[#EAF4F4] hidden md:block">
-                <div className="max-w-6xl flex mx-auto">
+                <div className="max-w-screen-2xl  lg:px-8 p-2 md:px-4 flex mx-auto">
                     {navItem.map((data, index) => {
                         return (
                             <Link
@@ -122,8 +131,8 @@ export const TopNavBar = () => {
                 <div className="">
                     {navItem.map((data, index) => {
                         return (
-                          <a
-                            key={index}
+                            <a
+                                key={index}
                                 href="/"
                                 className="block py-1 text-[10px] p-2 font-medium text-gray-800  focus:outline-none focus:text-white focus:bg-[#457B9D]  hover:text-[#ffffff]  transition duration-150 ease-in-out"
                             >
