@@ -6,7 +6,6 @@ import {
  
 } from "react-icons/md";
 
-
 import { Link } from "react-router-dom";
 import SearchInput from "../searchBar/SearchBar";
 import { assets } from "../../assets";
@@ -29,7 +28,7 @@ export const TopNavBar = () => {
     }
     return (
         <nav className="bg-[#CCE3DE] w-full mx-auto">
-            <div className="max-w-screen-2xl  lg:px-8 p-2 md:px-4 ">
+            <div className="max-w-screen-xl mx-auto  lg:px-8 p-2 md:px-4 ">
                 <div className="flex flex-col items-center justify-between screenSize border-b md:border-none border-[#CCE3DE]">
                     <div className="w-full flex justify-between items-center">
                         <a href="/" className="basis-1/6 text-gray-800">
@@ -78,7 +77,7 @@ export const TopNavBar = () => {
 
             {/* for large device */}
             <div className=" bg-[#EAF4F4] hidden md:block">
-                <div className="max-w-screen-2xl  lg:px-8 p-2 md:px-4 flex mx-auto">
+                <div className="max-w-screen-xl mx-auto  lg:px-8 p-2 md:px-4 flex mx-auto">
                     {navItem.map((data, index) => {
                         return (
                             <Link
