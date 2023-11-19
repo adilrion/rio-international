@@ -28,7 +28,7 @@ export const TopNavBar = () => {
     }
     return (
         <nav className="bg-[#CCE3DE] w-full mx-auto">
-            <div className="max-w-screen-xl mx-auto  lg:px-8 p-2 md:px-4 ">
+            <div className="max-w-screen-xl mx-auto  p-2">
                 <div className="flex flex-col items-center justify-between screenSize border-b md:border-none border-[#CCE3DE]">
                     <div className="w-full flex justify-between items-center">
                         <a href="/" className="basis-1/6 text-gray-800">
@@ -55,7 +55,7 @@ export const TopNavBar = () => {
                                         </span>
                                     </SheetTrigger>
                                     <SheetContent>
-                                       <h1>ddd</h1>
+                                        <h1>ddd</h1>
                                     </SheetContent>
                                 </Sheet>
 
@@ -66,9 +66,14 @@ export const TopNavBar = () => {
                                     </span>
                                 </button>
 
-                                <button className="bg-[#457B9D] text-[10px] px-3 md:px-4 py-1 md:py-2 rounded-full text-white">
-                                    LOGIN
-                                </button>
+                                <div className="capitalize w-fit h-fit shadow-inner border border-[#457B9D] text-[10px] font-semibold rounded">
+                                    <button className=" px-3 md:px-4 py-1 md:py-2  text-gray-800">
+                                        Login
+                                    </button>
+                                    <button className="bg-[#457B9D] text-white first-line:px-3 md:px-4 py-1 md:py-2">
+                                        Sign up
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,7 +82,7 @@ export const TopNavBar = () => {
 
             {/* for large device */}
             <div className=" bg-[#EAF4F4] hidden md:block">
-                <div className="max-w-screen-xl mx-auto  lg:px-8 p-2 md:px-4 flex mx-auto">
+                <div className="max-w-screen-xl p-2 flex mx-auto">
                     {navItem.map((data, index) => {
                         return (
                             <Link
