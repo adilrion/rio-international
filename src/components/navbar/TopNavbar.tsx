@@ -1,10 +1,5 @@
 import { useState } from "react";
 import './Style.css'
-import {
-    MdOutlineShoppingCart,
-    MdOutlineFavoriteBorder,
- 
-} from "react-icons/md";
 
 import { Link } from "react-router-dom";
 import SearchInput from "../searchBar/SearchBar";
