@@ -8,7 +8,7 @@ export const Layout = ({ children }:{children: ReactNode}) => {
         <>
             <TopNavBar />
 
-            <div className="min-h-screen max-w-screen-xl mx-auto">
+            <div className="min-h-screen max-w-screen-xl mx-auto md:px-5 px-2">
                 {children}
             </div>
 

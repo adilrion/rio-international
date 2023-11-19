@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
         <footer className="">
-            <div className="mx-auto bg-[#eaf4f4]  lg:px-8 p-2 md:px-4">
+            <div className="mx-auto bg-[#eaf4f4] md:px-5 p-2">
                 <div className="grid grid-cols-2 gap-8  max-w-screen-xl mx-auto py-6 lg:py-8 md:grid-cols-4 screenSize">
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
@@ -108,10 +108,10 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className=" bg-[#cce3de] shadow    lg:px-8 p-2 md:px-4">
+            <div className=" bg-[#cce3de] shadow md:px-5  p-2">
                 <div className=" py-6 screenSize max-w-screen-xl mx-auto md:flex md:items-center md:justify-between">
                     <span className="text-sm text-gray-900  sm:text-center">
-                        © 2023 <a href="https://flowbite.com/">Flowbite™</a>.
+                        © 2023 <a href="https://flowbite.com/">Rio Internation</a>.
                         All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">

@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import SearchInput from "../searchBar/SearchBar";
 import { assets } from "../../assets";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Heart, ShoppingCart } from "lucide-react";
 
 const navItem = [
     { title: "Fashion", href: "/fashion" },
@@ -28,7 +29,7 @@ export const TopNavBar = () => {
     }
     return (
         <nav className="bg-[#CCE3DE] w-full mx-auto">
-            <div className="max-w-screen-xl mx-auto  p-2">
+            <div className="max-w-screen-xl mx-auto  p-2 md:px-5">
                 <div className="flex flex-col items-center justify-between screenSize border-b md:border-none border-[#CCE3DE]">
                     <div className="w-full flex justify-between items-center">
                         <a href="/" className="basis-1/6 text-gray-800">
@@ -39,7 +40,7 @@ export const TopNavBar = () => {
                             />
                         </a>
                         {/* search Form */}
-                        <div className="hidden md:block w-full">
+                        <div className="basis-2/4 hidden md:block w-full">
                             <SearchInput></SearchInput>
                         </div>
 
@@ -48,7 +49,7 @@ export const TopNavBar = () => {
                                 <Sheet>
                                     <SheetTrigger>
                                         <span className="relative">
-                                            <MdOutlineFavoriteBorder className="text-[25px] md:text-[30px] text-[#457B9D] " />
+                                            <Heart className="text-[25px] md:text-[30px] text-[#457B9D] " />
                                             <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
                                                 64
                                             </span>
@@ -59,20 +60,27 @@ export const TopNavBar = () => {
                                     </SheetContent>
                                 </Sheet>
 
-                                <button className="relative">
-                                    <MdOutlineShoppingCart className="text-[25px] md:text-[30px] text-[#457B9D] " />
-                                    <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
-                                        24
-                                    </span>
-                                </button>
+                                <Link to='/cart'>
+                                    <button className="relative">
+                                        <ShoppingCart className="text-[25px] md:text-[30px] text-[#457B9D] " />
 
-                                <div className="capitalize w-fit h-fit shadow-inner border border-[#457B9D] text-[10px] font-semibold rounded">
-                                    <button className=" px-3 md:px-4 py-1 md:py-2  text-gray-800">
-                                        Login
+                                        <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
+                                            24
+                                        </span>
                                     </button>
-                                    <button className="bg-[#457B9D] text-white first-line:px-3 md:px-4 py-1 md:py-2">
-                                        Sign up
-                                    </button>
+                                </Link>
+
+                                <div className="capitalize ml-2 w-fit h-fit shadow-inner shadow-[#457B9D] border border-[#457B9D] text-[10px] font-semibold rounded">
+                                    <Link to="/login">
+                                        <button className=" px-3 md:px-4 py-1 md:py-2  text-gray-800">
+                                            Login
+                                        </button>
+                                    </Link>
+                                    <Link to="/sign-up">
+                                        <button className="bg-[#457B9D] text-white first-line:px-3 md:px-4 py-1 md:py-2">
+                                            Sign up
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +90,7 @@ export const TopNavBar = () => {
 
             {/* for large device */}
             <div className=" bg-[#EAF4F4] hidden md:block">
-                <div className="max-w-screen-xl p-2 flex mx-auto">
+                <div className="max-w-screen-xl p-2 md:px-5 flex mx-auto">
                     {navItem.map((data, index) => {
                         return (
                             <Link

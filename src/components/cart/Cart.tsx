@@ -1,5 +1,7 @@
+import { Layout } from "@/layout/Layout"
+
 export const Cart = () => {
   return (
-    <div>cart</div>
+    <Layout>cart</Layout>
   )
 }
