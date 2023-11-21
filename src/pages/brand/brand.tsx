@@ -19,7 +19,12 @@ const brand = [
         img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
         title: "T-shirt",
         link: "/t-shirt",
-    }
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
 ];
 
 const Brand = () => {
@@ -29,7 +34,7 @@ const Brand = () => {
               {brand.map((data, index)=> (
                   <div
                       key={index}
-                      className="flex justify-center items-center shadow bg-gray-200"
+                      className="flex w-fit justify-center items-center shadow bg-gray-200"
                   >
                       <img
                           src={data.img}

@@ -1,4 +1,5 @@
 
+import { Product } from "@/components/product/Product";
 import {Banner} from "../../components/banner/Banner";
 import { Layout } from "../../layout/Layout";
 import Brand from "../brand/brand";
@@ -10,7 +11,8 @@ const Home = () => {
     return (
         <Layout>
             <Banner />
-            <Brand/>
+            <Brand />
+            <Product/>
             <Categories/>
         </Layout>
     );
