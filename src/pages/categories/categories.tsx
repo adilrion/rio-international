@@ -1,3 +1,5 @@
+import { addToCart } from "@/redux/features/cart/cartSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { Link } from "react-router-dom";
 
 const categories = [
@@ -63,6 +65,14 @@ const categories = [
     },
 ];
 const Categories = () => {
+const dispatch = useAppDispatch();
+    const cartItems = useAppSelector((state) => state.cart.items);
+    console.log(cartItems)
+
+  const handleAddToCart = () => {
+      const newItem = { id: 1, name: "Product 1", price: 20 }; // Replace with actual product data
+      dispatch(addToCart(newItem));
+  };
     return (
         <section>
             <p className="underline decoration-wavy">The quick brown fox</p>
@@ -79,6 +89,8 @@ const Categories = () => {
                     );
                 })}
             </div>
+
+            <button onClick={handleAddToCart}>Add to Cart</button>
         </section>
     );
 };

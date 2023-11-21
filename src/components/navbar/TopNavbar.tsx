@@ -55,7 +55,7 @@ export const TopNavBar = () => {
                                     </SheetContent>
                                 </Sheet>
 
-                                <Link to='/cart'>
+                                <Link to="/cart">
                                     <button className="relative">
                                         <ShoppingCart className="text-[25px] md:text-[30px] text-[#457B9D] " />
 
@@ -67,12 +67,12 @@ export const TopNavBar = () => {
 
                                 <div className="capitalize ml-2 w-fit h-fit shadow-inner shadow-[#457B9D] border border-[#457B9D] text-[10px] font-semibold rounded">
                                     <Link to="/login">
-                                        <button className=" px-3 md:px-4 py-1 md:py-2  text-gray-800">
+                                        <button className="tracking-wide px-3 md:px-4 py-1 md:py-2  text-gray-800">
                                             Login
                                         </button>
                                     </Link>
                                     <Link to="/sign-up">
-                                        <button className="bg-[#457B9D] text-white first-line:px-3 md:px-4 py-1 md:py-2">
+                                        <button className="tracking-wide bg-[#457B9D] text-white first-line:px-3 md:px-4 py-1 md:py-2">
                                             Sign up
                                         </button>
                                     </Link>
