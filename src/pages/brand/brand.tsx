@@ -1,5 +1,66 @@
+import { assets } from "@/assets";
 
 const brand = [
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
+    {
+        img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
+        title: "T-shirt",
+        link: "/t-shirt",
+    },
     {
         img: "https://sportsworld.com.bd/wp-content/uploads/2021/12/Sports-T-Shirt-Deep-Navy-Blue-With-Ash-Texture-F.png",
         title: "T-shirt",
@@ -30,18 +91,18 @@ const brand = [
 const Brand = () => {
   return (
       <section>
-          <div className="flex gap-5 overflow-x-auto">
-              {brand.map((data, index)=> (
+          <div className="flex flex-nowrap gap-2 overflow-x-auto touch-pan-y snap-x scroll-smooth rounded py-4">
+              {brand.map((data, index) => (
                   <div
                       key={index}
-                      className="flex w-fit justify-center items-center shadow bg-gray-200"
+                      className=" snap-start flex w-fit justify-center items-center shadow bg-gray-50 rounded-full px-2 min-w-[200px]"
                   >
                       <img
-                          src={data.img}
+                          src={assets.cl}
                           alt={data.title}
-                          className="w-[50px] h-[50px] rounded-full"
+                          className="w-[50px] h-[50px] rounded-full p-1"
                       />
-                      <p className="ml-2 whitespace-nowrap">company name</p>
+                      <p className=" whitespace-nowrap px-2">company name</p>
                   </div>
               ))}
           </div>
