@@ -23,7 +23,7 @@ const Product: React.FC<{ data: IProductItem[] }> = ({ data }) => {
                             <img
                                 src={product.image}
                                 alt=""
-                                className="w-full h-full object-fill group-hover:scale-105 transition"
+                                className="w-full h-full object-fill group-hover:scale-105 transition ease-in-out delay-150"
                             />
                         </div>
                         <div className=" p-4">
