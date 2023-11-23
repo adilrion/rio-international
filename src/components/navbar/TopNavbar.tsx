@@ -65,9 +65,9 @@ export const TopNavBar = () => {
                                     </button>
                                 </Link>
 
-                                <div className="capitalize ml-2 w-fit h-fit  border border-[#457B9D] text-[10px] font-semibold rounded shadow-sm shadow-gray-400">
+                                <div className="capitalize ml-2 w-fit h-fit  border border-[#457B9D] text-[10px] font-semibold rounded shadow-sm shadow-gray-400 overflow-hidden">
                                     <Link to="/login">
-                                        <button className="tracking-wide px-3 md:px-4 py-1 md:py-2  text-gray-800">
+                                        <button className="tracking-wide bg-gray-100 px-3 md:px-4 py-1 md:py-2  text-gray-800">
                                             Login
                                         </button>
                                     </Link>
