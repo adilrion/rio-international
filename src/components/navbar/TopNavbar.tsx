@@ -39,12 +39,12 @@ export const TopNavBar = () => {
                             <SearchInput></SearchInput>
                         </div>
 
-                        <div className="basis-1/4 ">
+                        <div className="md:basis-1/4 ">
                             <div className="flex gap-3 justify-end items-center">
                                 <Sheet>
                                     <SheetTrigger>
                                         <span className="relative">
-                                            <Heart className="text-[25px] md:text-[30px] text-[#457B9D] " />
+                                            <Heart className="text-[20px] md:text-[30px] text-[#457B9D] " />
                                             <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
                                                 64
                                             </span>
@@ -57,7 +57,7 @@ export const TopNavBar = () => {
 
                                 <Link to="/cart">
                                     <button className="relative">
-                                        <ShoppingCart className="text-[25px] md:text-[30px] text-[#457B9D] " />
+                                        <ShoppingCart className="text-[20px] md:text-[30px] text-[#457B9D] " />
 
                                         <span className="absolute top-[0px] right-[0px] translate-x-[50%] translate-y-[-50%] text-[6px] md:text-[10px] md:p-2 bg-[#457B9D] text-white rounded-full w-3 md:w-4 h-3 md:h-4  inline-flex justify-center items-center">
                                             24
@@ -65,14 +65,14 @@ export const TopNavBar = () => {
                                     </button>
                                 </Link>
 
-                                <div className="capitalize ml-2 w-fit h-fit shadow-inner shadow-[#457B9D] border border-[#457B9D] text-[10px] font-semibold rounded">
+                                <div className="capitalize ml-2 w-fit h-fit  border border-[#457B9D] text-[10px] font-semibold rounded shadow-sm shadow-gray-400">
                                     <Link to="/login">
                                         <button className="tracking-wide px-3 md:px-4 py-1 md:py-2  text-gray-800">
                                             Login
                                         </button>
                                     </Link>
                                     <Link to="/sign-up">
-                                        <button className="tracking-wide bg-[#457B9D] text-white first-line:px-3 md:px-4 py-1 md:py-2">
+                                        <button className="tracking-wide bg-[#457B9D] text-white  px-3 md:px-4 py-1 md:py-2">
                                             Sign up
                                         </button>
                                     </Link>

@@ -109,7 +109,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className=" bg-[#cce3de] shadow md:px-5  p-2">
-                <div className=" py-6 screenSize max-w-screen-xl mx-auto md:flex md:items-center md:justify-between">
+                <div className=" py-6 screenSize max-w-screen-xl mx-auto flex flex-col md:flex-row items-center md:items-center md:justify-between">
                     <span className="text-sm text-gray-900  sm:text-center">
                         © 2023 <a href="https://flowbite.com/">Rio Internation</a>.
                         All Rights Reserved.

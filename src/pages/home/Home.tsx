@@ -12,8 +12,8 @@ const Home = () => {
         <Layout>
             <Banner />
             <Brand />
-            <Product/>
             <Categories/>
+            <Product/>
         </Layout>
     );
 };

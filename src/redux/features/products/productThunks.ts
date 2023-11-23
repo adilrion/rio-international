@@ -8,6 +8,8 @@ export const fetchProducts = (): AppThunk => async (dispatch) => {
         const products = await getProducts();
         dispatch(getProductsSuccess(products));
     } catch (error) {
-        dispatch(getProductsFailure(error?.message));
+         const errorMessage =
+             error instanceof Error ? error.message : "An error occurred";
+        dispatch(getProductsFailure(errorMessage));
     }
 };
