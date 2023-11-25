@@ -33,8 +33,10 @@ const Product: React.FC<{ data: IProductItem[] }> = ({ data }) => {
                                 {product.price}
                             </h1>
                             <div>
-                                <div>
-                                    <p>Brand Name</p>
+                                <div className="flex justify-between items-center">
+                                    <p className="rounded-[0.27rem] bg-[#457B9D] px-[0.65em] py-[0.25em] text-center align-baseline text-[0.75em] font-bold leading-none text-gray-200">
+                                        Brand Name
+                                    </p>
                                     <p className="inline-flex items-center text-[13px] text-orange-500">
                                         {" "}
                                         {renderStars(fullStars, hasHalfStar)}

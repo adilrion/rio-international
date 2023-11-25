@@ -1,4 +1,5 @@
 
+import PaymentMethod from "@/components/paymentMethod/PaymentMethod";
 import {Banner} from "../../components/banner/Banner";
 import { Layout } from "../../layout/Layout";
 import Brand from "../brand/brand";
@@ -21,6 +22,7 @@ const Home = () => {
                     <Products/>
                 </div>
             </div>
+            <PaymentMethod/>
         </Layout>
     );
 };
