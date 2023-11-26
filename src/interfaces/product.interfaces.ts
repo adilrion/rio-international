@@ -1,9 +1,12 @@
-export interface IProduct {
-    category: string;
-    description: string;
-    id: number;
-    image: string;
-    price: number;
-    rating: { rate: number; count: number };
+export interface IProductItem {
+    id: string;
     title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
+    rating: {
+        rate: number;
+        count: number;
+    };
 }

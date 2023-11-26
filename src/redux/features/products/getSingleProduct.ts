@@ -2,41 +2,47 @@ import { IProductItem } from "@/interfaces/product.interfaces";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 
-
 interface ProductState {
-    data: IProductItem[];
+    data: IProductItem;
     loading: boolean;
     error: string | null;
 }
 
 const initialState: ProductState = {
-    data: [],
+    data: {} as IProductItem,
     loading: false,
     error: null,
 };
 
 
 
-const productSlice = createSlice({
-    name: "product",
+
+const productDetailsSlice = createSlice({
+    name: "productDetails",
     initialState,
     reducers: {
-        getProductsStart: (state) => {
+        getSingleProductStart: (state) => {
             state.loading = true;
             state.error = null;
         },
-        getProductsSuccess: (state, action: PayloadAction<IProductItem[]>) => {
+        getSingleProductSuccess: (
+            state,
+            action: PayloadAction<IProductItem>
+        ) => {
             state.loading = false;
             state.data = action.payload;
         },
-        getProductsFailure: (state, action: PayloadAction<string>) => {
+        getSingleProductFailure: (state, action: PayloadAction<string>) => {
             state.loading = false;
             state.error = action.payload;
         },
     },
 });
 
-export const { getProductsStart, getProductsSuccess, getProductsFailure } =
-    productSlice.actions;
+export const {
+    getSingleProductStart,
+    getSingleProductSuccess,
+    getSingleProductFailure,
+} = productDetailsSlice.actions;
 
-export default productSlice.reducer;
+export default productDetailsSlice.reducer;
