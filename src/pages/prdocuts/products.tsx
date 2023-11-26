@@ -1,3 +1,4 @@
+import Pagination from "@/components/pagination/Pagination";
 import Product from "@/components/product/Product";
 import { fetchProducts } from "@/redux/features/products/productThunks";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
@@ -24,6 +25,7 @@ const Products = () => {
     return (
         <div className="py-6">
             <Product data={products} />
+            <Pagination></Pagination>
         </div>
     );
 };

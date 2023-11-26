@@ -22,7 +22,8 @@ const Home = () => {
                     <Products/>
                 </div>
             </div>
-            <PaymentMethod/>
+            <PaymentMethod />
+            
         </Layout>
     );
 };

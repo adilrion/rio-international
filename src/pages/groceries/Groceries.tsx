@@ -1,7 +1,8 @@
+import { Layout } from "@/layout/Layout"
 
 const Groceries = () => {
   return (
-    <div>Groceries</div>
+    <Layout>Groceries</Layout>
   )
 }
 
