@@ -3,6 +3,7 @@ import { renderStars } from "@/lib/renderStars";
 import { IProductItem } from "@/redux/features/products/productSlice";
 import { DollarSign } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Product: React.FC<{ data: IProductItem[] }> = ({ data }) => {
      // Check if there's a half star
@@ -15,7 +16,8 @@ const Product: React.FC<{ data: IProductItem[] }> = ({ data }) => {
                 const fullStars:number = Math.floor(product.rating.rate);
                 const hasHalfStar:boolean = product.rating.rate - fullStars >= 0.5;
                 return (
-                    <div
+                    <Link
+                        to={`/product-details/${product.id}`}
                         key={product.id}
                         className=" shadow bg-gray-100 border rounded overflow-hidden hover:bg-gray-200 group"
                     >
@@ -48,7 +50,7 @@ const Product: React.FC<{ data: IProductItem[] }> = ({ data }) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 );
             })}
         </div>

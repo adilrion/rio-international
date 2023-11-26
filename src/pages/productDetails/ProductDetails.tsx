@@ -1,11 +1,10 @@
 import { Layout } from "@/layout/Layout";
+import { useParams } from "react-router-dom";
 
 const ProductDetails = () => {
-    return (
-        <Layout>
-          ProductDetailsPage  
-        </Layout>
-    );
+    const {id } = useParams()
+
+    return <Layout>ProductDetailsPage {id}</Layout>;
 };
 
 export default ProductDetails;

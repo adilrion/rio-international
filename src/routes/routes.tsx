@@ -11,6 +11,7 @@ import HealthBeauty from '@/pages/health&Beauty/HealthBeauty';
 import HomeLifeStyle from '@/pages/homeLifeStyle/HomeLifeStyle';
 import MobilesTablets from '@/pages/mobilesTablets/MobilesTablets';
 import Automobiles from '@/pages/automobiles/Automobiles';
+import ProductDetails from '@/pages/productDetails/ProductDetails';
 // categories
 
 export const router = createBrowserRouter([
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
     {
         path: "/automobiles",
         element: <Automobiles />,
+    },
+    {
+        path: "/product-details/:id",
+        element: <ProductDetails />,
     },
     {
         path: "/cart",
