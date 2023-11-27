@@ -1,7 +1,10 @@
 import { FaStar, FaStarHalfStroke, FaRegStar } from "react-icons/fa6";
 
 
-export  const renderStars = (fullStars: number, hasHalfStar: boolean) => {
+export const renderStars = (rating:number) => {
+    
+     const fullStars: number = Math.floor(rating);
+     const hasHalfStar: boolean = rating - fullStars >= 0.5;
     const stars = [];
     for (let i = 0; i < fullStars; i++) {
         stars.push(<FaStar key={i}>&#9733;</FaStar>); // Full star

@@ -1,6 +1,6 @@
 // Product.tsx
+import { IProductItem } from "@/interfaces/product.interfaces";
 import { renderStars } from "@/lib/renderStars";
-import { IProductItem } from "@/redux/features/products/productSlice";
 import { DollarSign } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -13,8 +13,7 @@ const Product: React.FC<{ data: IProductItem[] }> = ({ data }) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 pt-2 ">
             {data?.map((product) => {
-                const fullStars:number = Math.floor(product.rating.rate);
-                const hasHalfStar:boolean = product.rating.rate - fullStars >= 0.5;
+               
                 return (
                     <Link
                         to={`/product-details/${product.id}`}
@@ -41,7 +40,7 @@ const Product: React.FC<{ data: IProductItem[] }> = ({ data }) => {
                                     </p>
                                     <p className="inline-flex items-center text-[13px] text-orange-500">
                                         {" "}
-                                        {renderStars(fullStars, hasHalfStar)}
+                                        {renderStars(product.rating.rate)}
                                         <span className="text-gray-800 text-[12px] ml-2 font-thin">
                                             {" "}
                                             ({product.rating.count})
