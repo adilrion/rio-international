@@ -7,7 +7,7 @@ import ProductLoading from "@/components/loading/ProductLoading";
 import { renderStars } from "@/lib/renderStars";
 import { Minus, Plus } from "lucide-react";
 import Products from "../prdocuts/products";
-import Comments from "@/components/comments/comments";
+import Comments from "@/components/comments/Comments";
 
 const ProductDetails = () => {
     const { id } = useParams();

@@ -8,9 +8,8 @@ const Comments = () => {
     return (
         <div className="flex gap-2 py-5 border-b">
             <div className="min-w-[60px] h-[60px] rounded-full shadow overflow-hidden">
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGewRpHiFqi1F8YMBQyzxuUecyQPCBEbTn3Q&usqp=CAU"
-                    alt=""
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGewRpHiFqi1F8YMBQyzxuUecyQPCBEbTn3Q&usqp=CAU"
+                    alt="fff"
                     className="w-full h-full"
                 />
             </div>

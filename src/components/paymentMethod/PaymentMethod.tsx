@@ -1,5 +1,4 @@
 import { assets } from '@/assets';
-import React from 'react';
 
 
 const paymentOptions = [
