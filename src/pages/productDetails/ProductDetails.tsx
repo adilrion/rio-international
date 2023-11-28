@@ -7,6 +7,7 @@ import ProductLoading from "@/components/loading/ProductLoading";
 import { renderStars } from "@/lib/renderStars";
 import { Minus, Plus } from "lucide-react";
 import Products from "../prdocuts/products";
+import Comments from "@/components/comments/comments";
 
 const ProductDetails = () => {
     const { id } = useParams();
@@ -118,6 +119,10 @@ const ProductDetails = () => {
                         <h1 className="text-[16px] text-gray-500 border-b py-2">
                             Ratings & Reviews
                         </h1>
+
+                        <div>
+                            <Comments/>
+                        </div>
                     </div>
                 </div>
             </section>
