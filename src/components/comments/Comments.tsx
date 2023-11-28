@@ -1,10 +1,12 @@
 import { renderStars } from "@/lib/renderStars";
+import { AiTwotoneDislike, AiTwotoneLike } from "react-icons/ai";
+
 import { MdOutlineReportGmailerrorred } from "react-icons/md";
 
 
 const Comments = () => {
     return (
-        <div className="flex gap-2 py-2">
+        <div className="flex gap-2 py-5 border-b">
             <div className="min-w-[60px] h-[60px] rounded-full shadow overflow-hidden">
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGewRpHiFqi1F8YMBQyzxuUecyQPCBEbTn3Q&usqp=CAU"
@@ -47,6 +49,20 @@ const Comments = () => {
                     obcaecati iste itaque temporibus numquam consectetur
                     consequuntur, eaque laborum unde impedit. Impedit, pariatur?
                 </p>
+
+                <div>
+                    <div className="like flex items-center text-gray-500 gap-5">
+                        <div className="flex items-center justify-center gap-1">
+                            <AiTwotoneLike />
+                            <p>11</p>
+                        </div>
+                        <div className="flex  items-center justify-center gap-1">
+                            <AiTwotoneDislike />
+
+                            <p>23</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

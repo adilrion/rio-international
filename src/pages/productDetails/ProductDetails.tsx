@@ -122,6 +122,7 @@ const ProductDetails = () => {
 
                         <div>
                             <Comments/>
+                            <Comments/>
                         </div>
                     </div>
                 </div>
