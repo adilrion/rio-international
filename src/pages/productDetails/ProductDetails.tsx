@@ -16,7 +16,6 @@ const ProductDetails = () => {
     const loading = useAppSelector((state) => state.productDetails.loading);
     const error = useAppSelector((state) => state.productDetails.error);
 
-    console.log(product);
     useEffect(() => {
         const fetchData = async () => {
             await dispatch(fetchProductDetails(String(id)));
@@ -108,8 +107,9 @@ const ProductDetails = () => {
 
                         <div className="flex gap-2">
                             <button className="basis-1/2 bg-[#457B9D] text-white py-3 rounded">
-                                Buy Now
+                                <Link to="/cart" className="w-full h-full">Buy Now</Link>
                             </button>
+
                             <button className="basis-1/2 bg-[#45489d] text-white py-3 rounded">
                                 Add to cart
                             </button>
@@ -121,8 +121,8 @@ const ProductDetails = () => {
                         </h1>
 
                         <div>
-                            <Comments/>
-                            <Comments/>
+                            <Comments />
+                            <Comments />
                         </div>
                     </div>
                 </div>

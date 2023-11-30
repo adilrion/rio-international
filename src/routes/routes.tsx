@@ -4,7 +4,7 @@ import SignUp from '@/components/auth/SignUp';
 import Login from '@/components/auth/Login';
 import Home from '@/pages/home/Home';
 import PageNotFound from '@/pages/Error/PageNotFound';
-import { Cart } from '@/components/cart/Cart';
+import { Cart } from '@/pages/cart/Cart';
 import Fashion from '@/pages/fashion/Fashion';
 import Groceries from '@/pages/groceries/Groceries';
 import HealthBeauty from '@/pages/health&Beauty/HealthBeauty';
