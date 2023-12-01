@@ -1,4 +1,4 @@
-import CartItem from "@/components/cartItem/cartItem"
+import CartItem from "@/components/cartItem/CartItem";
 import { Layout } from "@/layout/Layout"
 
 export const Cart = () => {
@@ -9,6 +9,8 @@ export const Cart = () => {
                   <h1 className="text-[26px] font-mono antialiased font-medium tracking-wide border-b  pb-4">
                       Review order
                   </h1>
+                  <CartItem></CartItem>
+                  <CartItem></CartItem>
                   <CartItem></CartItem>
                   <CartItem></CartItem>
                   <CartItem></CartItem>
